@@ -28,9 +28,10 @@
                     <div class="grid sm:grid-cols-3 grid-cols-1 gap-[30px] mt-[30px]">
                        {{-- Tin mới nhất --}}
                         @foreach ($news['news_list'] as $item)
+                      
                         <div class="overflow-hidden" key={index}>
                             <div class="max-h-[250px] overflow-hidden">
-                                <a href="#">
+                                <a href="{{route('news.detail',[$item['news_group']['friendly_link'], $item['friendly_link']])}}">
                                     <img 
                                     {{-- src="{{ asset('storage/uploads/news/2022_07/mask_group_8184.png') }}" --}}
                                     src="{{ route('uploads',$item->picture) }}?w=380&h=217&fit=crop"
@@ -99,10 +100,10 @@
                             @if($key == 0)
                             <div class="row-span-3">
                                 <div class="">
-                                    <a href=""><img src={{route('uploads', $item->picture)}}
+                                    <a href="{{route('news.detail',[$item['news_group']['friendly_link'], $item['friendly_link']])}}"><img src={{route('uploads', $item->picture)}}
                                             alt="" class="object-cover" /></a>
                                 </div>
-                                <a href="">
+                                <a href="{{route('news.detail',[$item['news_group']['friendly_link'], $item['friendly_link']])}}">
                                     <p class="text-[18px] font-bold mt-[4%]">
                                         {{$item->title}}
                                     </p>
@@ -131,12 +132,12 @@
                             @else 
                             <div class="flex space-x-4" key={index}>
                                 <div class="w-1/3">
-                                    <a href=""><img
+                                    <a href="{{route('news.detail',[$item['news_group']['friendly_link'], $item['friendly_link']])}}"><img
                                         src={{route('uploads', $item->picture)}}
                                             alt="" /></a>
                                 </div>
                                 <div class="w-2/3 flex flex-col ">
-                                    <a href="">
+                                    <a href="{{route('news.detail',[$item['news_group']['friendly_link'], $item['friendly_link']])}}">
                                         <p class="text-[15px] font-bold ">
                                             {{$item->title}}
                                         </p>
@@ -191,13 +192,13 @@
                             @foreach ($news['news_list_topview'] as $item)
                             <div class="flex space-x-4 " key={index}>
                                 <div class="w-1/3">
-                                    <a href=""><img
+                                    <a href="{{route('news.detail',[$item['news_group']['friendly_link'], $item['friendly_link']])}}"><img
                                             src="{{route('uploads', $item->picture)}}"
                                             alt="" /></a>
                                 </div>
                                 <div class="w-2/3 flex flex-col justify-between">
                                     {{-- <a href=""><p class="text-[15px] font-bold ">{handelTitle(row.title, 3)}</p></a> --}}
-                                    <a href="">
+                                    <a href="{{route('news.detail',[$item['news_group']['friendly_link'], $item['friendly_link']])}}">
                                         <p class="text-[15px] font-bold ">
                                             {{$item->title}}
                                         </p>
@@ -255,11 +256,11 @@
                         @if ($key==0)
                         <div class="md:row-span-4 row-span-2 " key={index}>
                             <div class="overflow-hidden ">
-                                <a href=""><img
+                                <a href="{{route('news.detail',[$item['news_group']['friendly_link'], $item['friendly_link']])}}"><img
                                     src="{{route('uploads', $item->picture)}}"
                                         alt="" class="object-cover w-full" /></a>
                             </div>
-                            <a href="">
+                            <a href="{{route('news.detail',[$item['news_group']['friendly_link'], $item['friendly_link']])}}">
                                 <p class="text-[18px] font-bold mt-6">
                                     {{$item->title}}
                                 </p>
@@ -289,12 +290,12 @@
                         @else
                         <div class="flex space-x-4 sm:mt-0 mt-4 h-[100px] " key={index}>
                             <div class="w-1/3 sm:w-1/4 min-w-[100px] overflow-hidden">
-                                <a href=""><img
+                                <a href="{{route('news.detail',[$item['news_group']['friendly_link'], $item['friendly_link']])}}"><img
                                     src="{{route('uploads', $item->picture)}}"
                                         alt="" /></a>
                             </div>
                             <div class="w-2/3 sm:w-3/4 flex flex-col lg:justify-between">
-                                <a href="">
+                                <a href="{{route('news.detail',[$item['news_group']['friendly_link'], $item['friendly_link']])}}">
                                     <p class="text-[15px] font-bold ">
                                         {{$item->title}}    
                                     </p>
