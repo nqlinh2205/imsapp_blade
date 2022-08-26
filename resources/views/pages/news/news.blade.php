@@ -23,13 +23,13 @@
                     <p class="text-[40px] font-roboto font-bold pl-[28px]  h-[40px] leading-[40px]	">Tin mới nhất</p>
                 </div>
 
-
-                <div class="w-full">
+ 
+                <div class="w-full"> 
                     <div class="grid sm:grid-cols-3 grid-cols-1 gap-[30px] mt-[30px]">
                        {{-- Tin mới nhất --}}
                         @foreach ($news['news_list'] as $item)
                       
-                        <div class="overflow-hidden" key={index}>
+                        <div class="overflow-hidden" data-aos="fade-up" data-aos-duration="3000">
                             <div class="max-h-[250px] overflow-hidden">
                                 <a href="{{route('news.detail',[$item['news_group']['friendly_link'], $item['friendly_link']])}}">
                                     <img 
@@ -98,9 +98,10 @@
                         class="grid lg:grid-cols-2 grid-cols-1 lg:grid-flow-col gap-x-[30px] lg:gap-y-[30px] gap-y-[30px] ">
                         @foreach ($news['news_list_event'] as $key => $item)
                             @if($key == 0)
-                            <div class="row-span-3">
+                            <div class="row-span-3" data-aos="fade-left" >
                                 <div class="">
-                                    <a href="{{route('news.detail',[$item['news_group']['friendly_link'], $item['friendly_link']])}}"><img src={{route('uploads', $item->picture)}}
+                                    <a href="{{route('news.detail',[$item['news_group']['friendly_link'], $item['friendly_link']])}}">
+                                        <img src={{route('uploads', $item->picture)}}
                                             alt="" class="object-cover" /></a>
                                 </div>
                                 <a href="{{route('news.detail',[$item['news_group']['friendly_link'], $item['friendly_link']])}}">
@@ -130,7 +131,7 @@
                                 </div>
                             </div>
                             @else 
-                            <div class="flex space-x-4" key={index}>
+                            <div class="flex space-x-4" data-aos="fade-right">
                                 <div class="w-1/3">
                                     <a href="{{route('news.detail',[$item['news_group']['friendly_link'], $item['friendly_link']])}}"><img
                                         src={{route('uploads', $item->picture)}}
@@ -190,7 +191,7 @@
                         <div class="grid  grid-cols-1 gap-x-[30px]  gap-y-[42px] ">
                            {{-- đọc nhiều nhất --}}
                             @foreach ($news['news_list_topview'] as $item)
-                            <div class="flex space-x-4 " key={index}>
+                            <div class="flex space-x-4 " data-aos="fade-left">
                                 <div class="w-1/3">
                                     <a href="{{route('news.detail',[$item['news_group']['friendly_link'], $item['friendly_link']])}}"><img
                                             src="{{route('uploads', $item->picture)}}"

@@ -1,4 +1,4 @@
-@extends('layout.main')
+{{-- @extends('layout.main') --}}
 
 @php
     // dd($ims);
@@ -268,7 +268,6 @@
                                 <button class="rounded-3xl text-[17px] mb-1 border w-[148px] h-[41px] bg-[#0771b1] text-white">
                                     {{-- Gửi yêu cầu --}}
                                     {{$contact['lang']['send_contact']}}
-
                                 </button>
                             </form>
                         </div>

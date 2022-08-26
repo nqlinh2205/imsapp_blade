@@ -7,6 +7,16 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ImagesController;
 
+Route::get('/trung-tam-ho-tro', function(){
+    return view("Pages.other.support");
+ });
+ Route::get('/dieu-khoan', function(){
+    return view("Pages.other.rules");
+ });
+ Route::get('/bao-gia', function(){
+    return view("Pages.other.quote");
+ });
+
 
 Route::any('/', [HomeController::class, 'Home'])->name('/');
 // Images
@@ -65,3 +75,9 @@ foreach (Friendly_Link::where('module', DB::raw('action'))->get() as $route_modu
         }
     }
 }
+
+Route::prefix('admin')->group(function(){
+    Route::get('/dang-nhap', function(){ return view("admin.account.login");   });
+    Route::get('/dang-ky', function(){ return view("admin.account.register");   });
+    Route::get('/dang-ky-cong-ty', function(){ return view("admin.account.register_company");   });
+});

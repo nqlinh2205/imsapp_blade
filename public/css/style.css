@@ -47,3 +47,7 @@
   position: absolute;
   top: 12px
 }
+
+.filter-color{
+    filter: invert(24%) sepia(99%) saturate(3583%) hue-rotate(167deg) brightness(94%) contrast(105%);
+}

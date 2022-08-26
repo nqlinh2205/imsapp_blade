@@ -98,7 +98,7 @@
 
                     <div class="list-layout grid lg:grid-cols-4 grid-cols-2 gap-y-[70px] gap-x-[30px] mx-[80px] relative">
                         {{-- Giao diện đẹp, chuẩn UI/UX --}}
-                        @if ($app['detail_uiux'])
+                         @if ($app['detail_uiux'])
                             @foreach ($app['detail_uiux'] as $item)
                                 <div class="item-layout flex flex-col items-center justify-center" key={index}>
                                     <button class="app_slide_btn flex flex-col items-center justify-center">
@@ -116,14 +116,17 @@
                         <div><button class="next absolute sm:top-[32%] top-[45%] -right-10"></button>next</div> --}}
                     </div>
                 </div>
-                <div class="phone sm:mt-0 mt-5 relative lg:w-[30%] w-full lg:h-[630px] h-full">
-                    <img src="{{ route('uploads', 'page/2022_07/phone_copy_2.png') }}" alt="" width="321"
-                        height="600" class="absolute w-auto h-auto z-[100] inset-0 m-auto" />
-                    <img src="{{ asset('storage/uploads/app/2022_07/group_20962.png') }}" alt="" width="321"
-                        height="600" class="absolute w-auto h-auto z-[100] inset-0 m-auto" />
-
-
-                </div>
+                @if ($app['detail_uiux'])
+                            @foreach ($app['detail_uiux'] as $item)
+                            <div class="phone sm:mt-0 mt-5 relative lg:w-[30%] w-full lg:h-[630px] h-full">
+                                <img src="{{ route('uploads', 'page/2022_07/phone_copy_2.png') }}" alt="" width="321"
+                                    height="600" class="absolute w-auto h-auto z-[100] inset-0 m-auto" />
+                                <img src="{{ route('uploads', $item['picture']) }}" alt="" width="321"
+                                    height="600" class="absolute w-auto h-auto z-[100] inset-0 m-auto" />
+                            </div>
+                            @endforeach
+                        @endif
+                
             </div>
         </div>
         <div class="feature-focus bg-white pt-[40px] pb-[48px]">

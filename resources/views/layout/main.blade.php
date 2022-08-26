@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="{{ url(mix('css/app.css')) }}">
     <link rel='stylesheet' href='https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css'>
     <!-- Scripts -->
-    <script src="{{ url(mix('js/app.js')) }}" defer></script>
+    <script src="{{ url(mix('js/app.js')) }}"></script>
     <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
     {{-- jquery --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -34,24 +34,41 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     {{-- style css --}}
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+    {{-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> --}}
 </head>
 
 <body>
-    @include('layout.header')
-    <div class="mt-[120px]">
+    {{-- @include('layout.header') --}}
+    {{-- <div class="mt-[120px]"> --}}
+    <div class="">
         @yield('content')
     </div>
-    @include('layout.footer')
+    {{-- @include('layout.footer') --}}
 
     <script>
         $(document).ready(function() {
-          
+
             $(".show-menu-mobile").click(function() {
                 $(".nav-mobile").removeClass('hidden');
             });
             $(".close_nav").click(function() {
                 $(".nav-mobile").addClass('hidden');
             });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            let index_cur = 0,
+                width_cur = 0,
+                $btn = $('.app_slide_btn')
+            $btn.first().addClass('filter-color')
+            $btn.click(function() {
+                $btn.removeClass('filter-color')
+                $(this).addClass('filter-color')
+            });
+
+
         });
     </script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -62,7 +79,6 @@
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
-
         });
         $('.autoplay').slick({
             slidesToShow: 1,
@@ -90,8 +106,8 @@
                 $(this).parents(".item-process").addClass("item-process-active")
                 $('.bg-number').removeClass('bg-number-active')
                 $(this).parent().prev().addClass('bg-number-active')
-                $('.bg-inside-arrow').removeClass('bg-inside-arrow-active')              
-                $(this).parent().prev().find('.bg-inside-arrow').addClass('bg-inside-arrow-active')      
+                $('.bg-inside-arrow').removeClass('bg-inside-arrow-active')
+                $(this).parent().prev().find('.bg-inside-arrow').addClass('bg-inside-arrow-active')
                 $('.bg-inside').removeClass('bg-inside-active')
                 $(this).parent().prev().find('.bg-inside').addClass('bg-inside-active')
                 $('.bg-inside-number').removeClass('bg-inside-number-active')
@@ -99,6 +115,9 @@
 
             });
         });
+    </script>
+    <script>
+        AOS.init();
     </script>
 </body>
 

@@ -37,7 +37,6 @@
             </div>
             <div class="list-app grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[54px] pt-[76px] pb-[47px] mb-[36px]">
                 @foreach ($app['list_app'] as $item)
-              
                     <a href="{{route('app.detail', [ $item->group_link, $item->detail_link ] )}}" class="app flex-col flex justify-center items-center relative">
                         <div class="img">
                             <div class="bg-white drop-shadow-lg h-1/2">

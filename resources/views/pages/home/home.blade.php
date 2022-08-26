@@ -14,7 +14,7 @@
                     <p data-aos="fade-down" data-aos-duration="1000" class="font-bold text-[25px] uppercase tracking-[1.2rem]">
                         Mobile <span data-aos="fade-down" data-aos-duration="1500" class="text-[#0771B1]">App</span></p>
                     <div class="border-[#0771B1] border-[3px] rounded-full w-[30%] inline-block mt-[23px] mb-[16px]"></div>
-                    <div class=" font-bold text-[25px] capitalize pb-[18px] ">
+                    <div class=" font-bold text-[25px] capitalize pb-[18px] " >
                         Giải Pháp Ứng Dụng <br />
                         <div class="autoplay">
                             @foreach ($home['app_group'] as $item)
@@ -133,7 +133,7 @@
                     @foreach ($home['list_app'] as $item)
                         <a
                             href="{{ route('app.detail', [$item->group_link, $item->detail_link]) }}"class="app flex-col flex justify-center items-center relative">
-                            <div class="img">
+                            <div class="img" data-aos="zoom-in-down">
                                 <div class="bg-white drop-shadow-lg h-1/2">
                                     <img src="{{ route('uploads', $item->detail_picture) }}"alt="" width="364"
                                         height="297" />
@@ -225,7 +225,7 @@
         <div class="process bg-white text-center pb-[60px]">
             <div class="container  sm:px-0">
                
-                <p class="title text-[40px] font-roboto font-bold">
+                <p class="title text-[40px] font-roboto font-bold" data-aos="zoom-in">
                     {{-- Quy trình thiết kế --}}
                     {{ $home['group_banner_process']['title'] }}
                 </p>

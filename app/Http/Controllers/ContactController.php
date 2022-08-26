@@ -33,6 +33,7 @@ class ContactController extends Controller
     $data['sacombank'] = explode("\r\n", $data['map']->short);
     $data['dongabank'] = explode("\r\n", $data['map']->short1);
     $data['acbbank'] = explode("\r\n", $data['map']->short2);
+    
     if ($request->isMethod('post')) {
       if ($request->has('send')) {
         $request->validate(
