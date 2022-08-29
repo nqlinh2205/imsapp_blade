@@ -26,6 +26,9 @@ module.exports = {
             screens: {
                 xl: "1200px",
             },
+            boxShadow: {
+                full: '0  0 15px rgba(0, 0, 0, 0.1) ',
+            }
         },
         screens: {
             'xs': '475px', ...defaultTheme.screens,

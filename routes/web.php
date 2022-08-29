@@ -80,4 +80,20 @@ Route::prefix('admin')->group(function(){
     Route::get('/dang-nhap', function(){ return view("admin.account.login");   });
     Route::get('/dang-ky', function(){ return view("admin.account.register");   });
     Route::get('/dang-ky-cong-ty', function(){ return view("admin.account.register_company");   });
+    Route::get('/', function(){ return view("admin.dashboard.trangchutaikhoan");   });
+    Route::get('/quan-ly-ten-mien', function(){ return view("admin.dashboard.quanlytenmien");   });
+    Route::get('/ten-mien', function(){ return view("admin.dashboard.tenmien");   });
+    Route::get('/cloud-hosting', function(){ return view("admin.dashboard.cloudhosting");   });
+    Route::get('/ho-tro', function(){ return view("admin.dashboard.hotro");   });
+    Route::get('/cac-yeu-cau-da-gui', function(){ return view("admin.dashboard.cacyeucaudagui");   });
+    Route::get('/cai-dat-tai-khoan', function(){ return view("admin.dashboard.caidattaikhoan");   });
+    Route::get('/thay-doi-thong-tin-tai-khoan', function(){ return view("admin.dashboard.thaydoithongtintaikhoan");   });
+    Route::get('/thong-bao', function(){ return view("admin.dashboard.thongbao");   });
+    Route::get('/hoat-dong', function(){ return view("admin.dashboard.hoatdong");   });
+    Route::get('/danh-sach-don-hang', function(){ return view("admin.dashboard.danhsachdonhang");   });
+    Route::get('/quan-ly-hop-dong', function(){ return view("admin.dashboard.quanlyhopdong");   });
+    Route::get('/quan-ly-ban-khai', function(){ return view("admin.dashboard.quanlybankhai");   });
+    Route::get('/tong-hop-giao-dich', function(){ return view("admin.dashboard.tonghopgiaodich");   });
+    Route::get('/nap-tien', function(){ return view("admin.dashboard.naptien");   });
+
 });
