@@ -95,12 +95,12 @@
                 color: white;
                 font-size: 15px;
                 font-weight: 400;
-                padding: 24px 0;
+                padding: 10px 0;
             }
 
             td {
                 font-size: 14px;
-                padding: 10px 0;
+                padding: 12px 0;
             }
         </style>
         <div class="mt-4 min-w-[1122px] overflow-x-scroll  rounded-t-[10px] shadow-full">
@@ -113,7 +113,7 @@
                     <th class="w-1/6">Thời gian đặt hàng</th>
                     <th class="border-r-transparent w-1/5">
                         <p> Xóa đơn hàng</p>
-                        <p>(Chỉ được xóa khi đơn hàng đã hủy)</p>
+                        <p class="italic">(Chỉ được xóa khi đơn hàng đã hủy)</p>
                        
                     </th>
                 </thead>

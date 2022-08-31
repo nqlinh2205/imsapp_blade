@@ -12,13 +12,14 @@
                             <p> uy tín hàng đầu</p>
                         </div>
                     </div>
-                    <div class="w-3/5 m-auto">
+                    <div class="w-1/2 m-auto">
                         <img class="m-auto" src="{{ asset('admin_img/login-2.png') }}" alt="">
                     </div>
-                    <div class="px-6">
+                    <div class="px-6 w-4/5 m-auto">
                         <img class="m-auto" src="{{ asset('admin_img/ho-tro.png') }}" alt="">
 
                     </div>
+                
 
                 </div>
                 <div class="md:w-1/2  w-full bg-[#81d0f6] px-6 md:py-0 py-4 font-roboto  md:rounded-r-2xl md:max-h-[600px] overflow-scroll min-w-[330px]">

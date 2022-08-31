@@ -39,10 +39,10 @@
 <body>
     @include('admin.layout.header_dasboard')
         <div class="flex ">
-            <div class=" h-auto  relative width-menu z-[999]">
+            <div class="min-w-[300px] h-auto  relative width-menu z-[999]">
                 @include('admin.layout.sidebar')
             </div>
-            <div class="w-4/5 content duration-500 ease-in-out">
+            <div class="w-full content duration-500 ease-in-out pr-4">
                 <div class="mt-[119.484px]">
                     @yield('content')
 

@@ -8,7 +8,7 @@
             <div class="mb-2 mt-2 text-[17px]">
                 <label for="" class="block mb-2">Mã số khách/Email</label>
                 <input type="text" name="email" placeholder="Mã số khách/Email"
-                    class="bg-white border text-gray-900 w-full rounded-full p-2  outline-none">
+                    class="px-4 bg-white border text-gray-900 w-full rounded-full p-2  outline-none">
                 @error('full_name')
                     <div class="error-message text-red-600 text-[12px]">{{ $message }}
                     </div>
@@ -19,7 +19,7 @@
             <div class="mb-2 mt-2">
                 <label for="" class="block mb-2">Mật khẩu</label>
                 <input type="password" name="password" placeholder="Mật khẩu"
-                    class="bg-white border text-gray-900 w-full rounded-full p-2  outline-none">
+                    class="px-4 bg-white border text-gray-900 w-full rounded-full p-2  outline-none">
                 @error('full_name')
                     <div class="error-message text-red-600 text-[12px]">{{ $message }}
                     </div>

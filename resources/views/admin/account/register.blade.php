@@ -28,7 +28,7 @@
                     <div class="mb-2 mt-2 text-[17px]">
                         <label for="" class="block mb-2">Họ tên người đăng ký</label>
                         <input type="text" name="full_name" placeholder="Họ tên người đăng ký"
-                            class="bg-white border text-gray-900 w-full rounded-full p-2  outline-none">
+                            class="bg-white px-4 border text-gray-900 w-full rounded-full p-2  outline-none">
                         @error('full_name')
                             <div class="error-message text-red-600 text-[12px]">{{ $message }}
                             </div>
@@ -39,7 +39,7 @@
                     <div class="mb-2 mt-2 text-[17px]">
                         <label for="" class="block mb-2">Email</label>
                         <input type="text" name="email" placeholder="Email"
-                            class="bg-white border text-gray-900 w-full rounded-full p-2  outline-none">
+                            class="bg-white px-4 border text-gray-900 w-full rounded-full p-2  outline-none">
                         @error('email')
                             <div class="error-message text-red-600 text-[12px]">{{ $message }}
                             </div>
@@ -50,7 +50,7 @@
                     <div class="mb-2 mt-2">
                         <label for="" class="block mb-2">Số điện thoại </label>
                         <input type="text" name="phone" placeholder="Số điện thoại"
-                            class="bg-white border text-gray-900 w-full rounded-full p-2  outline-none">
+                            class="bg-white px-4 border text-gray-900 w-full rounded-full p-2  outline-none">
                         @error('phone')
                             <div class="error-message text-red-600 text-[12px]">{{ $message }}
                             </div>
@@ -62,7 +62,7 @@
                         <div class="mb-2 mt-2">
                             <label for="" class="block mb-2">Mật khẩu</label>
                             <input type="password" name="password" placeholder="Mật khẩu"
-                                class="bg-white border text-gray-900 w-full rounded-full p-2  outline-none">
+                                class="bg-white px-4 border text-gray-900 w-full rounded-full p-2  outline-none">
                             @error('phone')
                                 <div class="error-message text-red-600 text-[12px]">{{ $message }}
                                 </div>
@@ -73,7 +73,7 @@
                         <div class="mb-2 mt-2">
                             <label for="" class="block mb-2">Nhập lại mật khẩu</label>
                             <input type="password" name="re_password" placeholder="Nhập lại mật khẩu"
-                                class="bg-white border text-gray-900 w-full rounded-full p-2  outline-none">
+                                class="bg-white px-4 border text-gray-900 w-full rounded-full p-2  outline-none">
                             @error('phone')
                                 <div class="error-message text-red-600 text-[12px]">{{ $message }}
                                 </div>

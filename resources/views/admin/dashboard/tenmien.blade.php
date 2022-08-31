@@ -7,7 +7,7 @@
             <h1 class="font-roboto text-[25px] font-bold">duhochongphuc.com</h1>
         </div>
 
-        <div class="mt-4 min-w-[1122px] overflow-x-scroll shadow-full p-5 rounded-[5px]">
+        <div class="mt-4 min-w-[1122px] shadow-full p-5 rounded-[5px]">
             <h2 class="font-roboto text-[20px] font-bold">Quản trị tên miền</h2>
 
             <div class="flex space-x-2 items-center">

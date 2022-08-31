@@ -80,14 +80,14 @@
                 </div>
             </div>
             <div class="w-2/6 ml-4">
-                <div class="rounded-lg shadow-full font-roboto px-4 pt-3 mt-4  pb-10">
+                <div class="rounded-lg shadow-full font-roboto px-4 pt-3 mt-4  pb-[46px]">
                     {{--  --}}
                     <div class=" border-b-[1px] border-[#CCCCCC] ">
                         <div class="flex justify-between">
                             <p class="text-[20px] font-bold">Thông tin tài khoản</p>
                             <a href="" class="text-[#0771B1] underline text-[14px]">Xem chi tiết</a>
                         </div>
-                        <ul class="flex flex-col space-y-2 my-3">
+                        <ul class="flex flex-col space-y-4 my-3">
                             <li class="flex items-center space-x-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="15.563" height="13.328"
                                     viewBox="0 0 15.563 13.328">
@@ -167,7 +167,7 @@
                             </div>
                             <a href="" class="text-[#0771B1] underline text-[14px]">Xem chi tiết</a>
                         </div>
-                        <div class="bg-[#0BC3EB] rounded-full text-right px-4 py-2">
+                        <div class="bg-[#0BC3EB] rounded-full text-right px-4 py-2 mt-2">
                             <p class="text-white font-bold text-[17px]">200.000đ</p>
                         </div>
                     </div>
@@ -189,7 +189,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="bg-[#F5682E] rounded-full text-right px-4 py-2">
+                        <div class="bg-[#F5682E] rounded-full text-right px-4 py-2 mt-2">
                             <p class="text-white font-bold text-[17px]">200.000đ</p>
                         </div>
                     </div>
@@ -213,13 +213,13 @@
                             <a href="" class="text-[#0771B1] underline text-[14px]">Đổi quà</a>
 
                         </div>
-                        <div class="bg-[#00CB44] rounded-full text-right px-4 py-2">
+                        <div class="bg-[#00CB44] rounded-full text-right px-4 py-2 mt-2">
                             <p class="text-white font-bold text-[17px]">2000 điểm</p>
                         </div>
                     </div>
 
                 </div>
-                <div class="rounded-lg shadow-full font-roboto px-2 pt-3 mt-4  pb-10">
+                <div class="rounded-lg shadow-full font-roboto px-2 pt-3 mt-5  pb-10 max-h-[358px] overflow-y-scroll py">
                     {{--  --}}
                     <div class=" border-b-[1px] border-[#CCCCCC] py-4">
                         <div class="flex justify-between">
@@ -227,7 +227,7 @@
                         </div>
 
                     </div>
-                    <ul class="flex flex-col space-y-2 max-h-[294px] overflow-y-scroll">
+                    <ul class="flex flex-col space-y-2 ">
                         <li class="flex items-center space-x-2 py-2 mx-3  border-b-[1px] border-[#CCCCCC]" >
                             <span class="self-start py-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">

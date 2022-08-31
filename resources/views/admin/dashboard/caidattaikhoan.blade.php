@@ -120,12 +120,12 @@
                     $('.items-card-btn').css('font-weight', 'normal')
                     $(this).parent().addClass('items-nav-card-focus')
                     $(this).css('font-weight', 'bold')
-                    if($('.items-card-btn').index(this) == 1){
-                        $('.technical-management').show()
-                    }else{
-                        $('.technical-management').hide()
+                    // if($('.items-card-btn').index(this) == 1){
+                    //     $('.technical-management').show()
+                    // }else{
+                    //     $('.technical-management').hide()
 
-                    }
+                    // }
                 })
             })
         </script>
@@ -358,7 +358,7 @@
             </div>
         </div>
 
-        <div class="technical-management hidden">
+        <div class="technical-management ">
             {{-- Thông tin đăng nhập< --}}
             <div class="mt-4 min-w-[1122px] overflow-x-scroll shadow-full rounded-[5px] mb-10">
                 <div class=" px-5 pt-5">
